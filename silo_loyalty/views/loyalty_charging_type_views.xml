@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+        <record id="action_charging_type_car" model="ir.actions.act_window">
+        <field name="name">Charging Type</field>
+        <field name="res_model">loyalty.charging.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_charging_type_cars" name="Charging Type" action="silo_loyalty.action_charging_type_car"
+              parent="silo_loyalty.menu_loyalty_configration" sequence="10" groups="base.group_erp_manager"/>
+</odoo>

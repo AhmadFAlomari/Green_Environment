@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_loyalty_car_tree" model="ir.ui.view">
+        <field name="name">loyalty.car.tree</field>
+        <field name="model">loyalty.car</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="number"/>
+                <field name="driver_name"/>
+                <field name="driver_phone"/>
+                <field name="manufacturers_id"/>
+                <field name="model_id" optional="hide"/>
+                <field name="charging_type" optional="hide"/>
+
+            </tree>
+        </field>
+    </record>
+
+     <record id="view_loyalty_car_search" model="ir.ui.view">
+            <field name="name">loyalty.car.search</field>
+            <field name="model">loyalty.car</field>
+            <field name="arch" type="xml">
+                <search string="Search Loyalty Cars">
+                    <field name="number"/>
+                    <field name="driver_phone"/>
+                    <field name="driver_name"/>
+                </search>
+            </field>
+        </record>
+
+
+    <record id="view_loyalty_car_form" model="ir.ui.view">
+        <field name="name">loyalty.car.form</field>
+        <field name="model">loyalty.car</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+
+                </header>
+                <sheet>
+                    <field name="image_128" widget="image" class="oe_avatar"/>
+                    <div class="oe_title">
+                        <label for="number"/>
+                        <h1>
+                            <field name="number" placeholder="e.g. Number"/>
+                        </h1>
+                        <label for="manufacturers_id"/>
+                        <h2>
+                            <field name="manufacturers_id" placeholder="e.g. Tesla"/>
+                        </h2>
+                    </div>
+
+                    <group>
+                        <group>
+
+                            <field name="model_id" domain="[('brand_id', '=', manufacturers_id)]"/>
+                            <field name="charging_type"/>
+
+
+                        </group>
+                        <group string="Driver Information">
+                            <field name="driver_name"/>
+                            <field name="driver_phone"/>
+
+                        </group>
+
+                    </group>
+
+
+                    <notebook>
+                        <page string="Charging History" name="car_charging_history">
+                            <field name="charging_history" placeholder="Add a Actions...">
+                                <tree editable="top">
+                                    <field name="amount"/>
+                                    <field name="datetime"/>
+
+                                </tree>
+                            </field>
+
+                        </page>
+                    </notebook>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_loyalty_car" model="ir.actions.act_window">
+        <field name="name">Cars</field>
+        <field name="res_model">loyalty.car</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem id="menu_main_loyalty" name="Loyalty"/>
+
+    <menuitem id="menu_loyalty_cars" name="Cars" action="silo_loyalty.action_loyalty_car"
+              parent="silo_loyalty.menu_main_loyalty" sequence="1"/>
+
+    <menuitem id="menu_loyalty_configration" name="Configration"
+              parent="silo_loyalty.menu_main_loyalty" sequence="4" groups="base.group_erp_manager"/>
+
+    <menuitem id="menu_car_manufacturers" action="fleet.fleet_vehicle_model_brand_action" name="Manufacturers"
+              parent="silo_loyalty.menu_loyalty_configration" sequence="4"/>
+    <menuitem id="menu_car_model" name="Model" action="fleet.fleet_vehicle_model_action" parent="silo_loyalty.menu_loyalty_configration" sequence="5"/>
+
+
+</odoo>

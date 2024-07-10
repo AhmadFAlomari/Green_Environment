@@ -1,0 +1,7 @@
+.o_list_renderer .o_list_table tbody > tr > td.o_list_number:not(.o_list_record_selector) {
+    text-align: left !important;
+    direction: ltr;}
+
+.o_list_renderer .o_list_table thead .o_list_number_th {
+    text-align: left !important;
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_loyalty_charging_historie_car_tree" model="ir.ui.view">
+        <field name="name">loyalty.charging.histories.tree</field>
+        <field name="model">loyalty.charging.histories</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="loyalty_car_id"/>
+                <field name="amount" widget='monetary' options="{'currency_field': 'company_currency'}"/>
+                <field name="datetime"/>
+
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_loyalty_charging_histories_car_form" model="ir.ui.view">
+        <field name="name">loyalty.charging.histories.form</field>
+        <field name="model">loyalty.charging.histories</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="amount" widget='monetary' options="{'currency_field': 'company_currency'}"/>
+                <field name="company_currency" invisible="1"/>
+
+                    </group>
+                    <group>
+                        <field name="datetime" readonly="1"/>
+
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_charging_reporting_car" model="ir.actions.act_window">
+        <field name="name">Charging Type</field>
+        <field name="res_model">loyalty.charging.histories</field>
+        <field name="view_mode">graph,pivot,tree,form</field>
+    </record>
+
+        <menuitem id="menu_loyalty_reporting" name="Reporting"
+              parent="silo_loyalty.menu_main_loyalty" sequence="2" groups="base.group_erp_manager"/>
+
+    <menuitem id="menu_car_charging_report" action="action_charging_reporting_car" name="Charging Reporting"
+              parent="silo_loyalty.menu_loyalty_reporting" sequence="4"/>
+</odoo>

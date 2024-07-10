@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Inherit the existing form view of fleet.vehicle.model.brand -->
+        <record id="view_fleet_vehicle_model_brand_form" model="ir.ui.view">
+            <field name="name">fleet.vehicle.model.brand.form.inherited</field>
+            <field name="model">fleet.vehicle.model.brand</field>
+            <field name="inherit_id" ref="fleet.fleet_vehicle_model_brand_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form/sheet/group/group/field[@name='name']" position="after">
+                    <field name="charging_type"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

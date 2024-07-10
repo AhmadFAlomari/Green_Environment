@@ -1,0 +1,208 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* silo_loyalty
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-10 21:45+0000\n"
+"PO-Revision-Date: 2024-07-10 21:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: silo_loyalty
+#: model_terms:ir.ui.view,arch_db:silo_loyalty.view_loyalty_car_form
+msgid "Add a Actions..."
+msgstr "إضافة إجراءات..."
+
+#. module: silo_loyalty
+#: model:ir.model,name:silo_loyalty.model_fleet_vehicle_model_brand
+msgid "Brand of the vehicle"
+msgstr "العلامة التجارية للمركبة"
+
+#. module: silo_loyalty
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_histories__loyalty_car_id
+msgid "Car"
+msgstr "سيارة"
+
+#. module: silo_loyalty
+#: model:ir.actions.act_window,name:silo_loyalty.action_loyalty_car
+#: model:ir.ui.menu,name:silo_loyalty.menu_loyalty_cars
+msgid "Cars"
+msgstr "سيارات"
+
+#. module: silo_loyalty
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_histories__amount
+msgid "Charging Amount"
+msgstr "مبلغ الشحن"
+
+#. module: silo_loyalty
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_car__charging_history
+msgid "Charging Histories"
+msgstr "تواريخ الشحن"
+
+#. module: silo_loyalty
+#: model_terms:ir.ui.view,arch_db:silo_loyalty.view_loyalty_car_form
+msgid "Charging History"
+msgstr "تواريخ الشحن"
+
+#. module: silo_loyalty
+#: model:res.groups,name:silo_loyalty.group_charging_operator
+msgid "Charging Operator"
+msgstr "مشغل الشحن"
+
+#. module: silo_loyalty
+#: model:ir.ui.menu,name:silo_loyalty.menu_car_charging_report
+msgid "Charging Reporting"
+msgstr "تقرير الشحن"
+
+#. module: silo_loyalty
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_histories__datetime
+msgid "Charging Time"
+msgstr "وقت الشحن"
+
+#. module: silo_loyalty
+#: model:ir.actions.act_window,name:silo_loyalty.action_charging_reporting_car
+#: model:ir.actions.act_window,name:silo_loyalty.action_charging_type_car
+#: model:ir.model.fields,field_description:silo_loyalty.field_fleet_vehicle_model_brand__charging_type
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_car__charging_type
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_type__name
+#: model:ir.ui.menu,name:silo_loyalty.menu_charging_type_cars
+msgid "Charging Type"
+msgstr "نوع الشحن"
+
+#. module: silo_loyalty
+#: model:ir.ui.menu,name:silo_loyalty.menu_loyalty_configration
+msgid "Configration"
+msgstr "إعدادات"
+
+#. module: silo_loyalty
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_car__create_uid
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_histories__create_uid
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_type__create_uid
+msgid "Created by"
+msgstr "انشأ من قبل"
+
+#. module: silo_loyalty
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_car__create_date
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_histories__create_date
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_type__create_date
+msgid "Created on"
+msgstr "تم إنشاؤها على"
+
+#. module: silo_loyalty
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_histories__company_currency
+msgid "Currency"
+msgstr "عملة"
+
+#. module: silo_loyalty
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_car__display_name
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_histories__display_name
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_type__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: silo_loyalty
+#: model_terms:ir.ui.view,arch_db:silo_loyalty.view_loyalty_car_form
+msgid "Driver Information"
+msgstr "معلومات السائق"
+
+#. module: silo_loyalty
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_car__driver_name
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_histories__driver_name
+msgid "Driver Name"
+msgstr "اسم السائق"
+
+#. module: silo_loyalty
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_car__driver_phone
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_histories__driver_phone
+msgid "Driver Phone"
+msgstr "هاتف السائق"
+
+#. module: silo_loyalty
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_car__id
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_histories__id
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_type__id
+msgid "ID"
+msgstr ""
+
+#. module: silo_loyalty
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_car__write_uid
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_histories__write_uid
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_type__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: silo_loyalty
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_car__write_date
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_histories__write_date
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_charging_type__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: silo_loyalty
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_car__image_128
+msgid "Logo"
+msgstr ""
+
+#. module: silo_loyalty
+#: model:ir.ui.menu,name:silo_loyalty.menu_main_loyalty
+msgid "Loyalty"
+msgstr "الولاء"
+
+#. module: silo_loyalty
+#: model:ir.model,name:silo_loyalty.model_loyalty_car
+msgid "Loyalty Car"
+msgstr " سيارات الولاء"
+
+#. module: silo_loyalty
+#: model:ir.model,name:silo_loyalty.model_loyalty_charging_histories
+msgid "Loyalty Charging Histories"
+msgstr "تاريخ شحن الولاء"
+
+#. module: silo_loyalty
+#: model:ir.model,name:silo_loyalty.model_loyalty_charging_type
+msgid "Loyalty Charging Type"
+msgstr ""
+
+#. module: silo_loyalty
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_car__manufacturers_id
+#: model:ir.ui.menu,name:silo_loyalty.menu_car_manufacturers
+msgid "Manufacturers"
+msgstr "الشركات المصنعة"
+
+#. module: silo_loyalty
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_car__model_id
+#: model:ir.ui.menu,name:silo_loyalty.menu_car_model
+msgid "Model"
+msgstr "نوع"
+
+#. module: silo_loyalty
+#: model:ir.model.fields,field_description:silo_loyalty.field_loyalty_car__number
+msgid "Number"
+msgstr "رقم"
+
+#. module: silo_loyalty
+#: model:ir.ui.menu,name:silo_loyalty.menu_loyalty_reporting
+msgid "Reporting"
+msgstr " التقارير"
+
+#. module: silo_loyalty
+#: model_terms:ir.ui.view,arch_db:silo_loyalty.view_loyalty_car_search
+msgid "Search Loyalty Cars"
+msgstr ""
+
+#. module: silo_loyalty
+#: model_terms:ir.ui.view,arch_db:silo_loyalty.view_loyalty_car_form
+msgid "e.g. Number"
+msgstr "رقم"
+
+#. module: silo_loyalty
+#: model_terms:ir.ui.view,arch_db:silo_loyalty.view_loyalty_car_form
+msgid "e.g. Tesla"
+msgstr "تسلا"
