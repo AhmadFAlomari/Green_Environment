@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'SILO Loyalty',
-    'version': '17.0.1.0.0',
+    'version': '17.0.1.0.0 ',
     'category': 'SILO',
     'summary': 'SILO Loyalty.',
     'description': 'SILO Loyalty.',
