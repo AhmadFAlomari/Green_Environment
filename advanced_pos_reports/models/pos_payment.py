@@ -35,7 +35,7 @@ class PosPayment(models.Model):
                 FROM pos_payment AS payment,
                      pos_payment_method AS method
                 WHERE payment.payment_method_id = method.id
-                    AND payment.id IN %s
+                    AND pos_order_id IN %s
                 GROUP BY method.name,method.id
                 """, (tuple(order_ids),))
             payments_summary = self.env.cr.dictfetchall()
