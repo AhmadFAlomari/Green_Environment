@@ -339,7 +339,7 @@ msgstr "مرجع الطلب"
 #: code:addons/advanced_pos_reports/static/src/xml/Order_templates.xml:0
 #, python-format
 msgid "Order Summary"
-msgstr "كشق المبيعات"
+msgstr "كشف المبيعات"
 
 #. module: advanced_pos_reports
 #: model:ir.model.fields,field_description:advanced_pos_reports.field_pos_sale_ongoing__session_ids
